@@ -9,7 +9,7 @@
 
 ## 开发环境
 * Angular-cli:1.4.2 
-* Angualr:4.4.6
+* Angualr:5.0.3
 * Node:8.1.4
 
 ## 使用说明
