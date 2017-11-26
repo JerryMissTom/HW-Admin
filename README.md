@@ -7,6 +7,8 @@
 
 最近工作比较忙，希望可以抽空去一点点完善它。
 
+**Note**: 很多与Angular相关的问题，比如 `Bootstrap` ，第三方库的使用等，都可以在   `angular-cli` 的 `wiki` 上找到的。地址是：[stories](https://github.com/angular/angular-cli/wiki/stories)。建议学习Angular的人都看下。
+
 ## 开发环境
 * Angular-cli:1.4.2 
 * Angualr:5.0.3
