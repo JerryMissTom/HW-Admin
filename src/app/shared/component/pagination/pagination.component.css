@@ -1,0 +1,11 @@
+.pagination li {
+  cursor: pointer;
+}
+
+.iconfont {
+  color: #337ab7;
+}
+
+.pagination a {
+  height: 34px;
+}

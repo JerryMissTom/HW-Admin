@@ -1,0 +1,49 @@
+<ul class="pagination">
+  <li>
+    <a (click)="changePage(0)">
+      <i class="iconfont" title="首页">&#xe624;</i>
+    </a>
+  </li>
+  <li [class.disabled]="currentPage < 1">
+    <a (click)="goPrevious(currentPage)">
+      <i class="iconfont" title="上一页">&#xe60d;</i>
+    </a>
+  </li>
+  <li class="disabled" *ngIf="currentPage > 3">
+    <a>...</a>
+  </li>
+  <li *ngIf="currentPage >= 3">
+    <a (click)="changePage(currentPage-3)">{{currentPage-2}}</a>
+  </li>
+  <li *ngIf="currentPage >= 2">
+    <a (click)="changePage(currentPage-2)">{{currentPage-1}}</a>
+  </li>
+  <li *ngIf="currentPage >= 1">
+    <a (click)="changePage(currentPage-1)">{{currentPage}}</a>
+  </li>
+  <li class="active">
+    <a (click)="changePage(currentPage)">{{currentPage+1}}</a>
+  </li>
+  <li *ngIf="currentPage <= totalPage-2">
+    <a (click)="changePage(currentPage+1)">{{currentPage+2}}</a>
+  </li>
+  <li *ngIf="currentPage <= totalPage-3">
+    <a (click)="changePage(currentPage+2)">{{currentPage+3}}</a>
+  </li>
+  <li *ngIf="currentPage <= totalPage-4">
+    <a (click)="changePage(currentPage+3)">{{currentPage+4}}</a>
+  </li>
+  <li class="disabled" *ngIf="currentPage < totalPage-4">
+    <a>...</a>
+  </li>
+  <li [class.disabled]="currentPage > totalPage-2">
+    <a (click)="goNext(currentPage)">
+      <i class="iconfont" title="下一页">&#xe60b;</i>
+    </a>
+  </li>
+  <li>
+    <a (click)="changePage(totalPage-1)">
+      <i class="iconfont" title="末页">&#xe627;</i>
+    </a>
+  </li>
+</ul>
