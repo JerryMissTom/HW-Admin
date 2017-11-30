@@ -12,4 +12,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  login(event) {
+
+  }
+
+  register() {
+
+  }
 }
