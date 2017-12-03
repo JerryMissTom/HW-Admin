@@ -12,11 +12,21 @@ import { CoreModule } from './core/core.module';
 import { LoginComponent } from './login/login.component';
 import { SharedModule } from './shared/shared.module';
 import { appRoutes } from './app.router';
+import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { UserComponent } from './admin/user/user.component';
+import { SettingComponent } from './admin/setting/setting.component';
+import { ButtonComponent } from './admin/dashboard/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent,
+    DashboardComponent,
+    SettingComponent,
+    UserComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
