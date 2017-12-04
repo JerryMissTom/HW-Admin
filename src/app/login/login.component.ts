@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['admin'], { replaceUrl: true }); // 点击浏览器的后退按钮，无法返回至登录页
   }
 
+
+  
   register() {
 
   }

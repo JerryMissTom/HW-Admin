@@ -1,9 +1,8 @@
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
+//import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UserComponent } from './admin/user/user.component';
 import { SettingComponent } from './admin/setting/setting.component';
-import { Component } from '@angular/core';
 
 export const appRoutes = [
     {
@@ -26,7 +25,7 @@ export const appRoutes = [
             },
             {
                 path: 'dashboard',
-                component: DashboardComponent
+                loadChildren: 'app/admin/dashboard/dashboard.module#DashboardModule'
             },
             {
                 path: 'user',
@@ -38,7 +37,7 @@ export const appRoutes = [
             },
             {
                 path: '**',
-                component: DashboardComponent
+                component: SettingComponent
             }]
     },
     {

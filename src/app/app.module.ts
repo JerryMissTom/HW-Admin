@@ -23,10 +23,8 @@ import { ButtonComponent } from './admin/dashboard/button/button.component';
     AppComponent,
     LoginComponent,
     AdminComponent,
-    DashboardComponent,
     SettingComponent,
-    UserComponent,
-    ButtonComponent
+    UserComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,14 @@
 <ul class="nav nav-pills nav-stacked col-md-2">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
+  <li routerLinkActive="active">
+    <a routerLink="button"  >Button</a>
+  </li>
+  <li routerLinkActive="active">
+    <a routerLink="echarts">Echarts</a>
+  </li>
+  <li >
+    <a href="#">Messages</a>
+  </li>
 </ul>
+<div class="col-md-10">
+<router-outlet></router-outlet>
+</div>
