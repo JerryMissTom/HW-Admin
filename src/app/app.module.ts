@@ -17,6 +17,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UserComponent } from './admin/user/user.component';
 import { SettingComponent } from './admin/setting/setting.component';
 import { ButtonComponent } from './admin/dashboard/button/button.component';
+import { EchartsComponent } from './admin/dashboard/echarts/echarts.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,10 @@ import { ButtonComponent } from './admin/dashboard/button/button.component';
     LoginComponent,
     AdminComponent,
     SettingComponent,
-    UserComponent
+    UserComponent,
+    ButtonComponent,
+    EchartsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

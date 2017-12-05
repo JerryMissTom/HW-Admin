@@ -1,8 +1,10 @@
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
-//import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { UserComponent } from './admin/user/user.component';
 import { SettingComponent } from './admin/setting/setting.component';
+import { ButtonComponent } from './admin/dashboard/button/button.component';
+import { EchartsComponent } from './admin/dashboard/echarts/echarts.component';
 
 export const appRoutes = [
     {
@@ -25,7 +27,26 @@ export const appRoutes = [
             },
             {
                 path: 'dashboard',
-                loadChildren: 'app/admin/dashboard/dashboard.module#DashboardModule'
+                component: DashboardComponent,
+                children:
+                    [
+                        {
+                            path: '',
+                            redirectTo: 'button',
+                            pathMatch: 'full'
+                        },
+                        {
+                            path: 'button',
+                            component: ButtonComponent
+                        },
+                        {
+                            path: 'echarts',
+                            component: EchartsComponent
+                        },
+                        {
+                            path: '**',
+                            component: ButtonComponent
+                        }]
             },
             {
                 path: 'user',
