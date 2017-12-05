@@ -1,14 +1,16 @@
-<ul class="nav nav-pills nav-stacked col-md-2">
-  <li routerLinkActive="active">
-    <a routerLink="button"  >Button</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="echarts">Echarts</a>
-  </li>
-  <li >
-    <a href="#">Messages</a>
-  </li>
-</ul>
-<div class="col-md-10">
-<router-outlet></router-outlet>
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <li routerLinkActive="active">
+      <a routerLink="button">Button</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="echarts">Echarts</a>
+    </li>
+    <li>
+      <a href="#">Messages</a>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-7  col-md-10 ">
+  <router-outlet></router-outlet>
 </div>
