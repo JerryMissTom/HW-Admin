@@ -18,6 +18,7 @@ import { UserComponent } from './admin/user/user.component';
 import { SettingComponent } from './admin/setting/setting.component';
 import { ButtonComponent } from './admin/dashboard/button/button.component';
 import { EchartsComponent } from './admin/dashboard/echarts/echarts.component';
+import { SelectivePreloadingStrategy } from './shared/router-config/preloading-strategy';
 
 @NgModule({
   declarations: [
@@ -38,10 +39,11 @@ import { EchartsComponent } from './admin/dashboard/echarts/echarts.component';
     HttpModule,
     ReactiveFormsModule,
     SharedModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { preloadingStrategy: SelectivePreloadingStrategy })
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    SelectivePreloadingStrategy
   ],
   bootstrap: [AppComponent]
 })
