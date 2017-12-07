@@ -1,3 +1,17 @@
-.content{
-    margin-top: 50px;
+.content {
+  margin-top: 50px;
+}
+
+.brand-active {
+  color: #fff;
+  background-color: #080808;
+}
+
+.login-out {
+  background: transparent;
+  color: white;
+}
+
+.login-out-icon {
+  color: white;
 }
