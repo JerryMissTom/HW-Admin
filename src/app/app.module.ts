@@ -25,7 +25,7 @@ import { SelectivePreloadingStrategy } from './shared/router-config/preloading-s
     AppComponent,
     LoginComponent,
     AdminComponent,
-    SettingComponent,
+
     UserComponent,
     ButtonComponent,
     EchartsComponent,
@@ -39,7 +39,7 @@ import { SelectivePreloadingStrategy } from './shared/router-config/preloading-s
     HttpModule,
     ReactiveFormsModule,
     SharedModule,
-    RouterModule.forRoot(appRoutes, { preloadingStrategy: SelectivePreloadingStrategy })
+    RouterModule.forRoot(appRoutes, { preloadingStrategy: SelectivePreloadingStrategy, useHash: true })
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

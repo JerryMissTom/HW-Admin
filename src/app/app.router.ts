@@ -54,11 +54,14 @@ export const appRoutes = [
             },
             {
                 path: 'setting',
-                component: SettingComponent
+                loadChildren: 'app/admin/setting/setting.module#SettingModule',
+                data: {
+                    preload: true
+                }
             },
             {
                 path: '**',
-                component: SettingComponent
+                component: AdminComponent
             }]
     },
     {
