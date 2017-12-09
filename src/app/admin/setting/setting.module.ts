@@ -5,12 +5,14 @@ import { AuthManageComponent } from './auth-manage/auth-manage.component';
 import { SettingComponent } from './setting.component';
 import { RouterModule } from '@angular/router';
 import { settingRoutes } from './setting.router';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(settingRoutes)
   ],
-  declarations: [BasicInfoComponent, AuthManageComponent, SettingComponent]
+  declarations: [BasicInfoComponent, AuthManageComponent, SettingComponent],
+  providers: [AuthGuard]
 })
 export class SettingModule { }
